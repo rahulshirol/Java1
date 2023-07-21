@@ -1,0 +1,23 @@
+class Generator{
+	String brand;
+	int voltage;
+	double price;
+	
+	Generator(){
+		System.out.println("Invoking no-arguments from Generator");
+		System.out.println("Generator brand  :"+this.brand);
+		System.out.println("Generator voltage:"+this.voltage);
+		System.out.println("Generator price  :"+this.price);
+		this.brand="ECOFLOW"; 
+		this.voltage=120;
+		this.price=5400;
+
+	}
+	Generator(String brand,int voltage,double price){
+		System.out.println("Invoking arguments from Generator");
+		this.brand=brand; 
+		this.voltage=voltage;
+		this.price=price;
+
+	}
+}

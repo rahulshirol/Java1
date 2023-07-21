@@ -1,0 +1,11 @@
+class Mobileinfo{
+		public static void main(String[] motorola)
+		{
+			System.out.println("android mobile info");
+			String brand;
+            String model;
+            String operatingSystem;
+            int storageCapacity;
+            int ram;
+		}
+}       

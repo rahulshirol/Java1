@@ -1,0 +1,48 @@
+class Train{
+	static String getTrainByNo(String  trainNo ){
+		System.out.println("invoking  getTrainByNo in Train");
+		if(trainNo!=null){
+			System.out.println(" getTrainByNo is valid");
+			if(trainNo=="11013"){
+			return "Coimbatore Express";
+		    }
+		    if(trainNo=="11014"){
+			return "Mumbai LTT Express";
+		    }
+		    if(trainNo=="12134"){
+			return "Mumbai CSMT SF Express";
+		    }
+		    if(trainNo=="22691"){
+			return "Hazrat Nizamuddin Rajdhani Express";
+		    }
+		}
+		    
+		else{
+			System.err.println("getTrainByNo is invalid");
+		    }
+			
+		
+		return "Belgavi SF Express";
+		
+	}
+	
+}
+class TrainKiller{
+	public static void main(String[] args){
+		System.out.println("Invoking main in TrainKiller");
+		
+		String ref1=Train.getTrainByNo("11013");
+		System.out.println("Ref1 is: "+ref1);
+		
+		String ref2=Train.getTrainByNo("11014");
+		System.out.println("Ref2 is: "+ref2);
+		
+		String ref3=Train.getTrainByNo("12134");
+		System.out.println("Ref3 is: "+ref3);
+		
+		String ref4=Train.getTrainByNo("22691");
+		System.out.println("Ref4 is: "+ref4);
+		
+		
+	}
+}
