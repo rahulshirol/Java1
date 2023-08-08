@@ -1,0 +1,186 @@
+1-Method overloading- method over loading is the same in the method with different parameters is called method overloading 
+
+
+ex-
+
+class Cake{
+
+static void tasty(int noOfPieces)
+{
+System.out.println("No of Pieces:"+noOfPieces);
+}
+static void tasty(int noOfPieces,String name)
+{
+System.out.println("No of Pieces:"+noOfPieces);
+System.out.println("Name:"+name);
+}
+}
+
+
+//Main method
+class CakeKiller{
+public static void main(String[] values)
+{
+System.out.println("Invoking main in CakeKiller");
+Cake.tasty(7);
+Cake.tasty(5,"BlackForestry");
+}
+}
+
+
+
+
+2-Different kind of variable are 
+        1.local variable- the local variable is the declare in the method 
+        2.instance variable- the instance variable is the declare in the class but outside the method
+        3.static variable- the static vriable are declare using the keyword 'static'
+
+
+a)class King{
+public static void main(String[] args)
+{
+int value;
+}
+}
+
+b)Static variable: Variable declared outside the method and inside the class by using static keyword. Static variable will creat only single copy of an object.
+      class Name{
+      static int value;
+}
+c)Instance variable:variable is declared outside the method and inside the class;
+class Think{
+int value;
+} 
+d)Parameter:It is also known as local variable and anything which is written within paranthesis is called as parameter;
+class Name{
+static void teach(int value) 
+}
+
+
+
+3- .heap memory is the main memory for the program
+   .initally the when program is written, then create the the heap memory
+   .inside the heap memory the metaspace,constant pool,instance memory as well as stack will be created 
+   . inside the stack thare will craete the stack frames.
+   
+   .stack memory will have the stack frames
+   . in stack frames have the address of the class 
+   .
+
+
+
+
+
+5-
+class Cake{
+
+void tasty(int noOfPieces)
+{
+System.out.println("No of Pieces:"+noOfPieces);
+}
+void tasty(int noOfPieces,String name)
+{
+System.out.println("No of Pieces:"+noOfPieces);
+System.out.println("Name:"+name);
+}
+
+}
+
+class CakeKiller{
+public static void main(String[] values)
+{
+System.out.println("Invoking main in CakeKiller");
+Cake.tasty(7);
+Cake.tasty(5,"BlackForestry");
+
+
+6-
+
+class Bureau{
+	int noOfDoors;
+	char size;
+	static String madeFrom;
+	static boolean storesItems;
+	
+	public void instanceVarMethod(){
+		System.out.printf("noOfDoors: %d \nSize: %c", noOfDoors, size);
+	}
+	static void staticVarMethod(){
+		System.out.printf("\nmadeFrom: %s \nstoresItems: %b", madeFrom, storesItems);
+	}
+	Bureau(int noOfDoors, char size){
+		this.noOfDoors = noOfDoors;
+		this.size = size;
+	}
+	static{
+		madeFrom = "Metalic";
+		storesItems = true;
+	}
+}
+
+
+class Power{
+static String unit;
+static int value;
+
+static void energy(){
+  this.unit="Watt";
+   this.value=45;
+}
+}
+
+//Main 
+class PowerKiller{
+public static void main(String[] args)
+{
+System.out.println("Invoking main in PowerKiller");
+Power power=new Power();
+power.energy();
+}
+}
+
+
+7-
+class Generator1{
+	String brand;
+	int voltage;
+	double price;
+	
+	Generator(){
+		System.out.println("Invoking no-arguments from Generator");
+		System.out.println("Generator brand  :"+this.brand);
+		System.out.println("Generator voltage:"+this.voltage);
+		System.out.println("Generator price  :"+this.price);
+		this.brand="ECOFLOW"; 
+		this.voltage=120;
+		this.price=5400;
+
+	}
+	Generator(String brand,int voltage,double price){
+		System.out.println("Invoking arguments from Generator");
+		this.brand=brand; 
+		this.voltage=voltage;
+		this.price=price;
+
+	}
+}
+
+Class generatorrunner{
+public static void main(String[] args){
+System.out.println("Invoking main in generator");
+Generator generator=new Generator();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
